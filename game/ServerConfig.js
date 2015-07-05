@@ -1,6 +1,11 @@
+require("coffee-script/register")
+
 var config = {
 	include: [
-		//{name: 'MyClassName', path: './gameClasses/MyClassFileName'},
+		{name: 'ServerNetworkEvents', path: './gameClasses/ServerNetworkEvents'},
+		{name: 'Character', path: './gameClasses/Character'},
+		{name: 'CharacterContainer', path: './gameClasses/CharacterContainer'},
+		{name: 'PlayerComponent', path: './gameClasses/PlayerComponent'}
 	]
 };
 

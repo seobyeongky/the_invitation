@@ -1,0 +1,1 @@
+browserify -t coffeeify classes-for-client.coffee > classes-for-client.js
