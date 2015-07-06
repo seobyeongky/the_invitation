@@ -1,4 +1,4 @@
-module.exports =
+module.exports = (global ? window).ClientNetworkEvents =
 
 	_onPlayerEntity: (data) ->
 		if ige.$(data)

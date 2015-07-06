@@ -1,4 +1,4 @@
-module.exports =
+module.exports = (global ? window).ServerNetworkEvents =
 
 	_onPlayerConnect : (sock) ->
 		false

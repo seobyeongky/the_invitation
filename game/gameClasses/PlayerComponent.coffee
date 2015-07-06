@@ -1,4 +1,4 @@
-module.exports = IgeEntity.extend
+module.exports = (global ? window).PlayerComponent = IgeEntity.extend
 
   classId: 'PlayerComponent'
 

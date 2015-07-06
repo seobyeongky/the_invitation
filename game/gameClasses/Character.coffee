@@ -1,4 +1,4 @@
-module.exports = IgeEntity.extend
+module.exports = (global ? window).Character = IgeEntity.extend
 
   classId: 'Character'
 

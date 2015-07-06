@@ -1,4 +1,4 @@
-Client = IgeClass.extend(
+module.exports = (global ? window).Client = IgeClass.extend
   classId: 'Client'
   init: ->
     #ige.timeScale(0.1);
@@ -13,7 +13,7 @@ Client = IgeClass.extend(
     # Create the HTML canvas
     ige.createFrontBuffer true
     # Load the textures we want to use
-    @textures = grassSheet: new IgeCellSheet('../assets/textures/tiles/grassSheet.png', 4, 1)
+    @textures = grassSheet: new IgeCellSheet('./assets/textures/tiles/grassSheet.png', 4, 1)
     ige.on 'texturesLoaded', ->
       # Ask the engine to start
       ige.start (success) ->
@@ -74,4 +74,3 @@ Client = IgeClass.extend(
         return
       return
     return
-)

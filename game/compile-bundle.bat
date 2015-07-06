@@ -1,0 +1,1 @@
+browserify -t coffeeify bundle.coffee > bundle.js
